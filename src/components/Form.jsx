@@ -1,6 +1,9 @@
+import { useParams } from "react-router"
 import Input from "./Input"
 
 function Form() {
+    const { id } = useParams()
+
     return (
         <>
             <form className="flex flex-col">
