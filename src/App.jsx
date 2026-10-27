@@ -4,6 +4,7 @@ import Logo from "./components/Logo.jsx"
 import Layout from "./pages/Layout.jsx"
 import Footer from "./components/Footer.jsx"
 import Home from "./pages/Home.jsx"
+import Consulta from "./pages/Consulta.jsx"
 
 function App(){
   return (
@@ -11,6 +12,7 @@ function App(){
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/consulta" element={<Consulta />} />
           <Route path="/a" element={<Layout />}>
             <Route index element={<Logo />} />
             <Route path="form/:id" element={<Form />} />
